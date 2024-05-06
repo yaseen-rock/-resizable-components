@@ -1,13 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import LandingPage from "./about/page";
+import ResizableLayout from "./layout/page";
 
 export default function Home() {
   return (
     <>
-      <LandingPage />
+      <ResizableLayout />
       {/* You can use the Image component here if needed */}
     </>
   );
 }
-
