@@ -33,7 +33,7 @@ To run this application locally, follow these steps:
 4. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
@@ -53,9 +53,16 @@ The application interacts with the following API endpoints:
 
 ## Technologies Used
 
+- Next.js
 - React.js
 - Material-UI
 - react-grid-layout
+
+## Deployment
+
+The application is deployed and can be accessed using the following link:
+
+[Feedback Management Application](https://resizable-components-six.vercel.app/)
 
 ## License
 
