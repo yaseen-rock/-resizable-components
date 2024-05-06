@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Feedback Management Application
 
-## Getting Started
+This is a feedback management application built using React.js and Material-UI. It allows users to view, add, and update feedback for different cards displayed on the dashboard.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Draggable Layout:** The application uses the `react-grid-layout` library to enable draggable and resizable layout for the cards on the dashboard.
+- **Feedback Management:** Users can add new feedback or update existing feedback for each card displayed on the dashboard.
+- **API Integration:** The application communicates with a backend API to fetch feedback data and perform CRUD operations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To run this application locally, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone <repository_url>
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd feedback-management-app
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
+
+## Usage
+
+- **Dashboard:** The dashboard displays cards with different information. Each card has an "Add" button to add new feedback and an "Update" button to update existing feedback.
+- **Feedback Form:** Clicking on the "Add" or "Update" button opens a form where users can input their feedback. Clicking the respective button submits the feedback.
+
+## API Integration
+
+The application interacts with the following API endpoints:
+
+- **GET /api/users:** Retrieves feedback data from the server.
+- **POST /api/users:** Adds new feedback to the server.
+- **PUT /api/users:** Updates existing feedback on the server.
+
+## Technologies Used
+
+- React.js
+- Material-UI
+- react-grid-layout
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
